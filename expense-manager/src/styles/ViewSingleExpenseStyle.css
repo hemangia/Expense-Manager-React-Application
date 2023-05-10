@@ -1,0 +1,103 @@
+.single-expense-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: solid #0e3963;
+  box-sizing: border-box;
+  border-radius: 40px;
+  background-color: #ebebeb;
+}
+.expense-sigle-item {
+  width: 60rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-width: 1px;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.expense-sigle-item-desc {
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
+}
+.expense-sigle-item-desc h4 {
+  font-size: 1.17em;
+  width: 180px;
+}
+.expense-sigle-item-desc p {
+  font-size: 1.17em;
+  font-weight: 700;
+}
+
+.expense-sigle-item-action {
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+}
+.view-single-expense-container {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+}
+
+/************ Edit expense form ************/
+.edit-expense-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.edit-expense-item-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.edit-expense-action-container {
+  padding: 0.2rem;
+  text-align: center;
+}
+
+.edit-exp-main-container {
+  background-color: #a892ee;
+  border-radius: 12px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  display: block;
+  margin: 2rem auto;
+  max-width: 95%;
+  padding: 1rem;
+  text-align: center;
+  width: 50rem;
+}
+
+.edit-expense-item-container label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+  width: 300px;
+  font-size: 1.17em;
+}
+
+.edit-expense-item-container input {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 20rem;
+  max-width: 100%;
+}
+.edit-expense-action-container button {
+  background-color: #0e3963;
+  border: 1px solid #0e3963;
+  border-radius: 12px;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  margin-right: 1rem;
+  padding: 1rem 2rem;
+}

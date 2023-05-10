@@ -1,0 +1,133 @@
+.dashboard-container {
+  margin: 0 auto;
+  overflow: hidden;
+  /* width: 72%;
+  border-radius: 50px;*/
+  background: #0e3963;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.dashboard-container nav {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-container button {
+  display: none;
+}
+
+.dashboard-container ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+  padding-top: 25px;
+  padding-left: 180px;
+}
+
+.dashboard-container li {
+  margin: 0 0.5rem;
+  font-size: 1.5em;
+}
+.dashboard-container a {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .dashboard-container button {
+    display: block;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dashboard-container ul {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 0.5rem 0;
+    display: none;
+  }
+
+  .dashboard-container ul.open {
+    display: flex;
+  }
+
+  .dashboard-container li {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+}
+/************ Dashboard Page ************/
+.dashboard-page-container {
+  text-align: center;
+}
+
+.nav.nav-pills .nav-link {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 17px 0;
+  color: #fff;
+  width: 100%;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  z-index: 0;
+}
+
+.nav.nav-pills .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+
+.nav.nav-pills .nav-link.active::before {
+  width: 100% !important;
+}
+.nav.nav-pills .nav-link.active {
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+.nav.nav-pills .nav-item {
+  width: 25%;
+}
+.nav.nav-pills {
+  width: 72%;
+  margin: 0 auto;
+  border-radius: 50px;
+  background-color: #0e3963;
+  overflow: hidden;
+}
+
+.nav-link:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/*-----------Pie chart-----------------*/
+.dashboard-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pie-chart-container {
+  margin-top: 20px;
+}
